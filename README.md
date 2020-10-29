@@ -1,10 +1,9 @@
 # dev_site
-проект для контейнеризирования сайта
-используется: nginx + php-fpm + mysql
-обратите внимание, что изменения вносимые в БД не сохраняются после остановки контейнера, в случае необходимости можно создать дамп в контейнере dev_site_mysql_1
+Project to open site in docker.
+Use: nginx + php-fpm + mysql
 
-Запуск:
-1. положить файлы сайта в www/hello.dev (не забыть установить корретные права)
-2. положить дамп в файл data/sait.sql
-3. линк к БД= host: (по ip адресу), db_name: "sait", db_user: "ca60673_0", db_pass: "06HO9XK3Y"
+For steart:
+1. drop site files in www/hello.dev/ (you need to set right user for files)
+2. put database dump in data/sait.sql
+3. configurate links to database
 4. ./docker_start.sh
